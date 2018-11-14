@@ -4,11 +4,11 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<select name="comboProvincia" onchange="changeProvincia('Sevilla');">
-    <option value="Sevilla" selected>Sevilla</option>
+<select name="comboProvincia" id="comboProvincia" onchange="changeProvincia(this);">
+    <option value="Sevilla">Sevilla</option>
     <option value="Huelva">Huelva</option>
     <option value="Malaga">Malaga</option>
-    <option value="Cadiz">Cadiz</option>
+    <option value="Madrid">Madrid</option>
 </select>
 
 <div id="myMap" style="position:relative;width:100%;height:500px;"></div>
