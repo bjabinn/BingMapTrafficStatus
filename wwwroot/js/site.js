@@ -25,9 +25,9 @@ function changeProvincia(province) {
 
 function GetMap() {
     map = new Microsoft.Maps.Map('#myMap', {
-        center: new Microsoft.Maps.Location(37.340937, -6.062320),
+        //center: new Microsoft.Maps.Location(37.340937, -6.062320),
         mapTypeId: Microsoft.Maps.MapTypeId.road,
-        zoom: 15
+        zoom: 14
     });
     //Add your post map load code here.
     changeProvincia();
@@ -36,13 +36,16 @@ function GetMap() {
 
 function addRequestPins(bingMap, requestData) {
     var locations = [];
-    $.each(requestData, function (index, data) {
-        var location = new Microsoft.Maps.Location(data.toPoint.coordinates[0], data.toPoint.coordinates[1]);
-        locations.push(location);
-        var order = index + 1;
-        var pin = new Microsoft.Maps.Pushpin(location, { title: data.description});
-        bingMap.entities.push(pin);
-    });
-    var rect = Microsoft.Maps.LocationRect.fromLocations(locations);
-    bingMap.setView({ bounds: rect, padding: 80 });
+    if (requestData.length > 0){
+        $.each(requestData, function (index, data) {
+            var location = new Microsoft.Maps.Location(data.toPoint.coordinates[0], data.toPoint.coordinates[1]);
+            locations.push(location);
+            var order = index + 1;
+            var pin = new Microsoft.Maps.Pushpin(location, { title: data.description});
+            bingMap.entities.push(pin);
+        });
+        var rect = Microsoft.Maps.LocationRect.fromLocations(locations);
+        bingMap.setView({ bounds: rect, padding: 80 });
+    }
+
 }
