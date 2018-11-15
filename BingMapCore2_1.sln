@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingMapCore2_1", "BingMapCore2_1.csproj", "{31A6BCD2-855C-4855-A479-76E1A9CD3F38}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingMapCore2_1", "BingMapCore2_1.csproj", "{31A6BCD2-855C-4855-A479-76E1A9CD3F38}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A6575AA0-FC0D-4383-98D1-6E1053ED3014}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +16,15 @@ Global
 		{31A6BCD2-855C-4855-A479-76E1A9CD3F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31A6BCD2-855C-4855-A479-76E1A9CD3F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31A6BCD2-855C-4855-A479-76E1A9CD3F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6575AA0-FC0D-4383-98D1-6E1053ED3014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6575AA0-FC0D-4383-98D1-6E1053ED3014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6575AA0-FC0D-4383-98D1-6E1053ED3014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6575AA0-FC0D-4383-98D1-6E1053ED3014}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {015C1472-3CF9-4E82-BD0D-00960554FA61}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bingmapcore2_1:
+    image: ${DOCKER_REGISTRY}bingmapcore21
+    build:
+      context: .
+      dockerfile: Dockerfile
