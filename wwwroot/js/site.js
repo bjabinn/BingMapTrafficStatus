@@ -25,7 +25,7 @@ function changeProvincia(province) {
 
 function GetMap() {
     map = new Microsoft.Maps.Map('#myMap', {
-        //center: new Microsoft.Maps.Location(37.340937, -6.062320),
+        center: new Microsoft.Maps.Location(37.340937, -6.062320),
         mapTypeId: Microsoft.Maps.MapTypeId.road,
         zoom: 14
     });
